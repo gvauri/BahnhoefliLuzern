@@ -1,0 +1,64 @@
+/* main */
+main{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    'title title'
+    'team team '
+    'geschaeftsfuehrer geschaeftsfuehrer '
+    'koechin kellnerin'
+    'koch kellner';
+  justify-content: center;
+}
+
+.container-team{
+  grid-area: team;
+  width: 100%;
+}
+.container-title{
+  grid-area: title;
+}
+.geschaefts-fuehrer{
+  grid-area: geschaeftsfuehrer;
+}
+.koch{
+  grid-area: koch;
+}
+.koechin{
+  grid-area: koechin;
+}
+.kellner{
+  grid-area: kellner;
+}
+.kellnerin{
+  grid-area: kellnerin;
+}
+.container-angestellte{
+  margin: 5em;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.einzel-bilder{
+  max-width: 80%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:800px){
+  main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+    'title'
+    'team'
+    'geschaeftsfuehrer'
+    'koechin '
+    'koch '
+    'kellnerin'
+    'kellner';
+  }
+}

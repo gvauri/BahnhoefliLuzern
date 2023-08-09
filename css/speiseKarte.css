@@ -1,0 +1,39 @@
+main{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  justify-content: center;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.haupt-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 3em;
+  row-gap: 5em;
+  margin-top: 7em;
+}
+.undertitle{
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+@media screen and (max-width:750px){
+  .haupt-container{
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 3em;
+    row-gap: 5em;
+    margin-top: 7em;
+  }
+  .undertitle{
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+
+

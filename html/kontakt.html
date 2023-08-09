@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./../css/style.css">
+  <link rel="stylesheet" href="./../css/kontakt.css">
+  <link rel="icon" href="./../img/BahnhoefliLogo.png">
+  <meta charset="UTF-8">
+  <title>Kontakt Bahnhöfli Luzern</title>
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="./../img/BahnhoefliLogo.png" alt="logo from Bahnhöfli" class="logo-header">
+  </a>
+</header>
+<nav>
+  <a class="nav-link" href="ueberUns.html">Über Uns</a>
+  <a class="nav-link" href="speiseKarte.html">Speise Karte</a>
+  <a class="nav-link" href="kontakt.html">Kontakt</a>
+</nav>
+<main>
+  <form action="https://formlog.offline.ch/log" method="POST">
+    <div class="completesurvey">
+      <div class="personalien">
+        <h2>Reservation</h2>
+        <table class="table-center">
+          <tr>
+            <td>
+              <div class="container-input">
+                <input type="text" id="vornameReservation" name="Vorname" placeholder="Vorname">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="container-input">
+              <input type="text" placeholder="Nachname" name="Nachname">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="container-input">
+              <input type="email" placeholder="Email" name="email">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="container-input">
+              <input type="tel" placeholder="Telefonnummer" name="Telefonnummer">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="container-input">
+              <input type="date" placeholder=="Datum" name="datum">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="container-input">
+              <input type="number" placeholder="anz. Personen" name="personen">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <input type="submit" value="Bestätigen" class="bestaetigung-button">
+    </div>
+  </form>
+  <form action="https://formlog.offline.ch/log" method="POST">
+    <div class="completesurvey">
+      <div class="personalien">
+          <h2>Kontakt</h2>
+          <table class="table-center">
+            <tr>
+              <td>
+                <div class="container-input">
+                <input type="text" placeholder="Vorname" name="Vorname">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="container-input">
+                <input type="text" placeholder="Nachname" name="Nachname">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="container-input">
+                <input type="email" placeholder="Email" name="email">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="container-input">
+                <input type="tel" placeholder="Telefonnummer" name="Telefonnummer">
+                </div>
+              </td>
+            </tr>
+          </table>
+        <textarea  placeholder="Bemerkung" name="Bemerkung"></textarea>
+      </div>
+      <input type="submit" value="Bestätigen" class="bestaetigung-button">
+    </div>
+  </form>
+
+  </main>
+<footer>
+  <div class="footer-platz footer-containers">
+    <h2>Wo wir sind.</h2>
+    <p>Neuhaushöhe 77</p>
+    <p>6000 Luzern</p>
+  </div>
+  <div>
+    <img src="./../img/BahnhoefliLogo.png" alt="logo from Bahnhöfli" class="logo-footer">
+  </div>
+  <div class="footer-containers">
+    <h2>Kontakte</h2>
+    <p>079 088 03 90</p>
+    <p>bahnhoefli.restaurant@css.ch</p>
+  </div>
+</footer>
+</body>
+</html>
